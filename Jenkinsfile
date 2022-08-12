@@ -21,7 +21,7 @@ pipeline {
         }
         stage('Relative path') {
             steps {
-                bat("./scripts/fibonacci.bat ${env.NUMBER}")
+                bat(".\scripts\fibonacci.bat ${env.NUMBER}")
             }
         }
         stage('Full path') {
